@@ -52,6 +52,7 @@
   <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" remote="ok" revision="cm-11.0" />
   <project path="kernel/samsung/msm8930-common" name="platform_kernel_samsung_msm8930-common" remote="ok" revision="cm-11.0" />
   <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="cj" revision="cm-11.0" />
+  <project path="vendor/oct" name="vendor_oct" remote="ok" revision="kk-4.4" />
  
   <!-- AOSP -->
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="cts" />
