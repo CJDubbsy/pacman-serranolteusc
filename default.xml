@@ -23,11 +23,36 @@
            fetch="https://github.com/CyanogenMod"
            review="review.cyanogenmod.org" />
 
+  <remote name="ok"
+           fetch="https://github.com/Octo-Kat/"
+           sync-c="true"
+           sync-j="12" />
+
+  <remote name="cj"
+           fetch="https://github.com/CJDubbsy/"
+           sync-c="true"
+           sync-j="12" />
+
+  <remote name="sp"
+           fetch="https://github.com/SpawnPool/"
+           sync-c="true"
+           sync-j="12" />
+
   <default revision="refs/heads/cm-11.0"
            remote="github"
            sync-c="true"
            sync-j="8" />
 
+  <!-- Device -->
+  <project path="device/samsung/serranolteusc" name="platform_device_samsung_serranolteusc" groups="pdk" remote="ok" revision="kk-4.4" />
+  <project path="device/samsung/msm8930-common" name="platform_device_samsung_msm8930-common" groups="pdk" remote="ok" revision="cm-11.0" />
+  <project path="device/samsung/serrano-common" name="platform_device_samsung_serrano-common" groups="pdk" remote="ok" revision="cm-11.0" />
+  <project path="device/samsung/qcom-common" name="platform_device_samsung_qcom-common" groups="pdk" remote="sp" revision="kk-4.4" />
+  <project path="hardware/samsung" name="platform_hardware_samsung" remote="ok" revision="kk-4.4" />
+  <project path="hardware/qcom/fm" name="platform_hardware_qcom_fm" remote="ok" revision="cm-11.0" />
+  <project path="kernel/samsung/msm8930-common" name="platform_kernel_samsung_msm8930-common" remote="ok" revision="cm-11.0" />
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="cj" revision="cm-11.0" />
+ 
   <!-- AOSP -->
   <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-4.4.4_r2" groups="cts" />
   <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.4.4_r2" />
